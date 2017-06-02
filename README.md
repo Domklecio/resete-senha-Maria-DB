@@ -23,3 +23,10 @@ Agora saia do MySQL:
 mysql> quit 
 
 Reinicie o serviço do MySQL e pronto. Já podes logar com a senha que tu definiu. 
+
+
+Pasta msql sock
+
+chown -R mysql /var/run/mysqld
+chmod +x /var/run/mysqld/mysqld.sock
+/etc/init.d/mysql restart
